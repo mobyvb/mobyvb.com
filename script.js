@@ -7,4 +7,7 @@ $(function() {
     else
       $(this).addClass('closed');
   });
+  $('.modal-link').click(function(e) {
+    e.stopPropagation();
+  });
 });
