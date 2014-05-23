@@ -1,0 +1,98 @@
+@font-face {
+  font-family: open-sans;
+  src: url(OpenSans-Regular.ttf);
+}
+body {
+  font-family: 'open-sans' sans-serif;
+  font-size: 20px;
+  line-height: 1.7em;
+  background-image: url(wood.png);
+  background-attachment: fixed;
+  padding: 0;
+  margin: 0;
+}
+#main-content {
+  background-color: #F8F8FF;
+  padding: 50px 10%;
+  text-align: center;
+}
+#main-content p {
+  text-align: left;
+}
+#main-content h2 {
+  text-align: left;
+}
+h1 {
+  margin: 100px 5%;
+  color: lightgrey;
+}
+.project {
+  float: left;
+  background-color: #B0C0E0;
+}
+.col {
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+.col.one-half {
+  width: 47.5%;
+  float: left;
+  margin-right: 5%;
+}
+.col.one-half-last {
+  margin-right: 0;
+}
+.more-info {
+  overflow-y: hidden;
+}
+.project.closed .more-info {
+  height: 0;
+}
+.contact-links {
+  text-align: center;
+}
+.contact-links a {
+  color: #2090FF;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+.contact-links a:hover {
+  text-decoration: underline;
+}
+a {
+  color: black;
+}
+
+@media screen and (max-width: 640px) {
+  .col {
+    width: 100%;
+    margin-right: 0;
+  }
+  .col.one-half {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1024px){
+  .col.one-half {
+    width: 47.5%;
+    float: left;
+    margin-right: 5%;
+  }
+  .col.one-half-last {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .col.one-third {
+    width: 30%;
+    float: left;
+    margin-right: 5%;
+  }
+  .col.one-third-last {
+    margin: 0;
+  }
+}
