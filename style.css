@@ -22,6 +22,11 @@ body {
 #main-content h2 {
   text-align: left;
 }
+#main-content h1 {
+  margin: 27px 0;
+  text-align: left;
+  color: black;
+}
 h1 {
   margin: 100px 5%;
   color: lightgrey;
@@ -44,10 +49,27 @@ h1 {
   margin-right: 0;
 }
 .more-info {
-  overflow-y: hidden;
+  overflow-y: scroll;
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  bottom: 10%;
+  padding: 5% 5%;
+  background-color: #F8F8FF;
+}
+.project:before {
+  content: '';
+  display: block;
+  background: rgba(0,0,0,.6);
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom:0;
 }
 .project.closed .more-info {
-  height: 0;
+  display: none;
+}
+.project.closed:before {
+  display: none;
 }
 .contact-links {
   text-align: center;
@@ -63,8 +85,15 @@ h1 {
 }
 a {
   color: black;
+  text-decoration: none;
 }
-
+a.modal-link {
+  color: #2090FF;
+  display: block;
+}
+a.modal-link:hover {
+  text-decoration: underline;
+}
 @media screen and (max-width: 640px) {
   .col {
     width: 100%;
